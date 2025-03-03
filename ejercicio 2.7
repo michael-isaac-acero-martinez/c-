@@ -1,0 +1,17 @@
+// ejercicio 2.7
+
+#include <iostream>
+
+using namespace std;
+
+int main (){
+   float ntprac, ntTeorica, ntpart, ntfinal;
+
+    cout<<"ingrese nota de practica :";cin>>ntprac;
+    cout<<"ingrese nota teorica :";cin>>ntTeorica;
+    cout<<"ingrese nota de participación:";cin>>ntpart;
+    
+    ntfinal = (ntprac * 0.30) + (ntTeorica * 0.60) + (ntpart * 0.10);
+    
+    cout<<"la nota final es :"<<ntfinal;
+}

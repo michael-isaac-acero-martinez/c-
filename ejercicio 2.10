@@ -1,0 +1,32 @@
+// ejercicio 2.10
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+    float a, b, c, discriminante, x1, x2;
+
+    cout<<"ingrese el coeficiente a: ";cin>>a;
+
+    cout<<"ingrese el coeficiente b: ";cin>>b;
+
+    cout<<"ingrese el coeficiente c: ";cin>>c;
+
+    //discriminante
+    discriminante = b * b - 4 * a * c;
+
+    if (discriminante > 0){
+        x1 = (-b + sqrt(discriminante)) / (2 * a);
+        x2 = (-b - sqrt(discriminante)) / (2 * a);
+        cout<<"las soluciones son reales y diferentes: x1 = "<<x1<<", x2 = "<<x2<< endl;
+    }else if (discriminante == 0) {
+        x1 = -b / (2 * a);
+        cout<<"la solucion es unica y real: x = "<<x1<<endl;
+    }else{
+        float parte_real = -b / (2 * a);
+        float parte_imaginaria = sqrt(-discriminante) / (2 * a);
+        cout<<"las soluciones son complejas: x1 = "<<parte_real<<"+"<<parte_imaginaria<<"i, "<< "x2 = "<<parte_real<<" - "<<parte_imaginaria<<"i"<< endl;
+    }
+
+}

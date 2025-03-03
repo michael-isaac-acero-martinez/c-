@@ -1,0 +1,33 @@
+// ejercicio 3.12
+
+#include <iostream>
+
+#include <math.h>
+
+using namespace std;
+int main() {
+    int num, opc;
+
+    cout<<"\nbienvenido escoja una opción :"<<endl;
+    cout<<"1. cubo de un numero :"<<endl;
+    cout<<"2. par o impar :"<<endl;
+    cout<<"3. salir :"<<endl;
+    cout<<"opción :";cin>>opc;
+    
+    switch(opc){
+        case 1: {cout<<"\ningrese un numero :";cin>>num; int cubo=(pow(num,3));
+        cout<<"el numero es  : "<<cubo;break;
+        }
+        
+        case 2: cout<<"\n ingrese un numero :";cin>>num;
+        if (num % 2 == 0) {
+        cout << "El numero es par." << endl;
+    }else{
+        cout << "El numero es impar." << endl;break;
+    }
+        case 3: 
+        cout<<"salir  :"<<endl;break;
+
+    }
+
+}

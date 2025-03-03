@@ -1,0 +1,19 @@
+// ejercicio 3.10
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    string meses[12] = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
+
+   int numero;
+    cout<<"Ingrese un número del 1 al 12: ";cin>>numero;
+
+    if (numero >= 1 && numero <= 12){
+        cout<<"El mes es: "<<meses[numero - 1]<<endl;
+    }else{
+        cout<<"Número fuera del rango "<<endl;
+    }
+
+}

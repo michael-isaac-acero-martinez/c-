@@ -1,0 +1,22 @@
+// ejercicio 2.4
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    double a, b, c, d, num, den, res = 0;
+
+    cout<<"ingrese valor de a :";cin>>a;
+    cout<<"ingrese valor de b :";cin>>b;
+    cout<<"ingrese valor de c y d :";cin>>c>>d;
+    den = (c-d);
+    
+    if (den ==0){
+        cout<<"error no se puede dividir por 0"<<endl;
+    }else {
+    num = (b/den);
+    res = (a+num);
+    cout<<"el resultado es ;"<<res;
+    }
+}

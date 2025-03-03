@@ -1,0 +1,19 @@
+// ejercicio 2.1.2.5
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a, b, c, d ,res = 0;
+
+    cout<<"ingrese el primer número :";cin>>a;
+    cout<<"ingrese el segundo número:";cin>>b;
+    cout<<"ingrese el tercer número:";cin>>c;
+    cout<<"ingrese el cuarto número:";cin>>d;
+    
+    if (c == 0 && d == 0){
+        cout<<"error no se puede dividir por 0"<<endl;
+    }else res = (a+b)/(c+d);
+    cout<<"el resultado es :"<<res<<endl;
+    
+}
